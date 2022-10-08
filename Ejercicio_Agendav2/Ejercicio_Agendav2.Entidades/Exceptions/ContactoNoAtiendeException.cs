@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_Agendav2.InterfazConsola.Excepciones
+namespace Ejercicio_Agendav2.Entidades.Excepciones
 {
     public class ContactoNoAtiendeException : Exception
     {

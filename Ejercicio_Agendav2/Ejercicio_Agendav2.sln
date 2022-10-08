@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Agendav2.InterfazConsola", "Ejercicio_Agendav2.InterfazConsola\Ejercicio_Agendav2.InterfazConsola.csproj", "{0E7B1EB9-F4CD-41BF-8370-2488D6CD74A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Agendav2.Entidades", "Ejercicio_Agendav2.Entidades\Ejercicio_Agendav2.Entidades.csproj", "{9F5F5122-7B31-4C03-AA9E-56393982FDF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0E7B1EB9-F4CD-41BF-8370-2488D6CD74A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E7B1EB9-F4CD-41BF-8370-2488D6CD74A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E7B1EB9-F4CD-41BF-8370-2488D6CD74A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5F5122-7B31-4C03-AA9E-56393982FDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5F5122-7B31-4C03-AA9E-56393982FDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5F5122-7B31-4C03-AA9E-56393982FDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5F5122-7B31-4C03-AA9E-56393982FDF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

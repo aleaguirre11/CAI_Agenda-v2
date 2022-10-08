@@ -49,5 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ejercicio_Agendav2.Entidades\Ejercicio_Agendav2.Entidades.csproj">
+      <Project>{9f5f5122-7b31-4c03-aa9e-56393982fdf4}</Project>
+      <Name>Ejercicio_Agendav2.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
