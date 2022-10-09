@@ -17,6 +17,7 @@ namespace Ejercicio_Agendav2.Entidades
         private string _razonsocial;
         private DateTime _fechaconstitucion;
 
+
         public string Razonsocial
         {
             get
@@ -43,8 +44,10 @@ namespace Ejercicio_Agendav2.Entidades
 
         public int Antiguedad()
         {
-
+            int antiguedad = (DateTime.Now - _fechaconstitucion).Days/365;
+            return Convert.ToInt32(antiguedad);     
         }
+
            
     }
 }

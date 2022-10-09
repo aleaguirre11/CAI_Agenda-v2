@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ejercicio_Agendav2.Entidades;
+using Ejercicio_Agendav2.Entidades.Exceptions;
 
 namespace Ejercicio_Agendav2.InterfazConsola
 {
@@ -11,9 +12,9 @@ namespace Ejercicio_Agendav2.InterfazConsola
     {
         static void Main(string[] args)
         {
-            ContactoBase c1 = new ContactoEmpresa("Hardware Doc", 0, 1, "Ignacio Canal 869");
-            ContactoBase c2 = new ContactoPersona("Suyai", "Gonzales", 2233, 2 ,"Av Cabildo");
-            ContactoBase c3 = new ContactoPersona("Ariel", "Perez", 1234, 3, "Av Santa Fe");
+            ContactoBase c1 = new ContactoEmpresa("Hardware Doc", DateTime.Now.AddYears(-25), 1, "Ignacio Canal 869");
+            ContactoBase c2 = new ContactoPersona("Suyai", "Gonzales", DateTime.Now.AddYears(-20), 2,"Av Cabildo");
+            ContactoBase c3 = new ContactoPersona("Ariel", "Perez", DateTime.Now.AddYears(-5), 3, "Av Santa Fe");
 
             try
             {
@@ -63,7 +64,7 @@ namespace Ejercicio_Agendav2.InterfazConsola
 
         public static void DesplegarOpcionesMenu()
         {
-            Console.WriteLine("1- Mostrar lista de contactos. " + "\n" + "2- Agregar contacto. " + "\n" + "3- Eliminar contacto. " + "\n" + "4- Llamar");
+            Console.WriteLine("\n" + "1- Mostrar lista de contactos. " + "\n" + "2- Agregar contacto. " + "\n" + "3- Eliminar contacto. " + "\n" + "4- Llamar" + "\n");
         }
 
         public static void Listar(Agenda agendaElectronica)
@@ -76,40 +77,78 @@ namespace Ejercicio_Agendav2.InterfazConsola
 
         public static void Agregar(Agenda agendaElectronica)
         {
-            Console.WriteLine("Ingrese un nombre: ");
-            string nombre = Console.ReadLine();
 
-            Console.WriteLine("Ingrese un apellido: ");
-            string apellido = Console.ReadLine();
-
-            Console.WriteLine("Ingrese un telefono: ");
-            string telefono = Console.ReadLine();
+            Console.WriteLine("Ingrese un codigo: ");
+            int codigo = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Ingrese una direccion: ");
             string direccion = Console.ReadLine();
 
-            Console.WriteLine("Ingrese la edad: ");
-            int edad = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine("1 - Agregar contacto como empresa. " + "\n" + "2 - Agregar contacto como persona. ");
 
+            string opcionMenu = Console.ReadLine();
 
-            Contacto c = new Contacto(nombre, apellido, telefono, direccion, edad);
-            agendaElectronica.AgregarContacto(c);
+            switch (opcionMenu)
+            {
+                case "1":
+                    Console.WriteLine("Ingrese una razon social: ");
+                    string razonsocial = Console.ReadLine();
+
+                    Console.WriteLine("Ingrese la fecha de constitucion: ");
+                    DateTime fechaconstitucion = DateTime.Parse(Console.ReadLine());
+
+                    ContactoEmpresa c = new ContactoEmpresa(razonsocial, fechaconstitucion, codigo, direccion);
+                    agendaElectronica.AgregarContacto(c);
+                    break;
+
+                case "2":
+                    Console.WriteLine("Ingrese el nombre: ");
+                    string nombre = Console.ReadLine();
+
+                    Console.WriteLine("Ingrese el apellido: ");
+                    string apellido = Console.ReadLine();
+
+                    Console.WriteLine("Ingrese la fecha de nacimiento: ");
+                    DateTime fechanacimiento = DateTime.Parse(Console.ReadLine());
+
+                    ContactoBase contacto = new ContactoPersona(nombre, apellido, fechanacimiento, codigo, direccion);
+                    agendaElectronica.AgregarContacto(contacto);
+                    break;
+
+                default:
+                    break;
+            }
+
         }
 
         public static void eliminarContacto(Agenda agendaElectronica)
         {
-            Console.WriteLine("Ingrese el telefono del contacto a eliminar: ");
-            string telefono = Console.ReadLine();
+            try
+            {
+                Console.WriteLine("Ingrese el telefono del contacto a eliminar: ");
+                int codigo = Convert.ToInt32(Console.ReadLine());
 
-            agendaElectronica.EliminarContacto(telefono);
+                agendaElectronica.EliminarContacto(codigo);
+            }
+            catch (EliminarContactoException eliminarcontactoex)
+            {
+                Console.WriteLine(eliminarcontactoex.Message);
+            }
         }
 
         public static void Llamar(Agenda agendaElectronica)
         {
-            Console.WriteLine("Ingrese el nombre del contacto a llamar: ");
-            string nombre = Console.ReadLine();
+            try
+            {
+                Console.WriteLine("Ingrese el codigo del contacto a llamar: ");
+                int codigo = Convert.ToInt32(Console.ReadLine());
 
-            agendaElectronica.LlamarContacto(nombre);
+                agendaElectronica.LlamarContacto(codigo);
+            }
+            catch (ContactoNoAtiendeException contactonoatiendeex)
+            {
+                Console.WriteLine(contactonoatiendeex.Message);
+            }
         }
 
         private static void MostrarNombre(ContactoBase contacto)

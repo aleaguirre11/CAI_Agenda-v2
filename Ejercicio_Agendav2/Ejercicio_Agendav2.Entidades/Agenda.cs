@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ejercicio_Agendav2.Entidades.Exceptions;
 
 namespace Ejercicio_Agendav2.Entidades
 {
@@ -14,12 +15,14 @@ namespace Ejercicio_Agendav2.Entidades
             _tipo = tipo;
             _cantidadMax = cantidadMax;
             _contactos = new List<ContactoBase>();
+            _cantidadcontactos = 0;
         }
 
         private string _nombre;
         private string _tipo;
         private int _cantidadMax = 20;
         private List<ContactoBase> _contactos;
+        private int _cantidadcontactos;
         public string Nombre
         {
             get
@@ -56,6 +59,7 @@ namespace Ejercicio_Agendav2.Entidades
             }
         }
 
+
         public List<ContactoBase> Contactos
         {
             get
@@ -64,9 +68,19 @@ namespace Ejercicio_Agendav2.Entidades
             }
         }
 
-        public void AgregarContacto()
+        public int CantidadContactos
         {
-            
+            get
+            {
+                return _contactos.Count;
+            }
+        }
+        public void AgregarContacto(ContactoBase c)
+        {
+            if(CantidadContactos < CantidadMax)
+            {
+                _contactos.Add(c);
+            }
         }
 
         public void EliminarContacto(int codigo)
@@ -77,6 +91,21 @@ namespace Ejercicio_Agendav2.Entidades
                 if(contacto.Codigo == codigo)
                 {
                     Contactos.Remove(contacto);
+                }
+                else if(contacto.Codigo != codigo)
+                {
+                    throw new EliminarContactoException();
+                }
+            }
+        }
+
+        public void LlamarContacto(int codigo)
+        {
+            foreach (ContactoBase c in Contactos)
+            {
+                if (c.Codigo == codigo)
+                {
+                    c.Llamar();
                 }
             }
         }

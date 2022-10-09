@@ -47,6 +47,7 @@
     <Compile Include="ContactoPersona.cs" />
     <Compile Include="Exceptions\AgendaCompletaException.cs" />
     <Compile Include="Exceptions\ContactoNoAtiendeException.cs" />
+    <Compile Include="Exceptions\EliminarContactoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

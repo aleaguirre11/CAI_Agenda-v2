@@ -1,0 +1,6 @@
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\bin\Debug\Ejercicio_Agendav2.Entidades.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\bin\Debug\Ejercicio_Agendav2.Entidades.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\obj\Debug\Ejercicio_Agendav2.Entidades.csproj.AssemblyReference.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\obj\Debug\Ejercicio_Agendav2.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\obj\Debug\Ejercicio_Agendav2.Entidades.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.Entidades\obj\Debug\Ejercicio_Agendav2.Entidades.pdb

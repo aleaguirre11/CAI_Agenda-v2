@@ -55,10 +55,10 @@ namespace Ejercicio_Agendav2.Entidades
                 _fechanacimiento = value;
             }
         }
-
-        public void Edad()
+        public int Edad()
         {
-
+            int edad = (DateTime.Now - _fechanacimiento).Days / 365;
+            return Convert.ToInt32(edad);
         }
     }
 }

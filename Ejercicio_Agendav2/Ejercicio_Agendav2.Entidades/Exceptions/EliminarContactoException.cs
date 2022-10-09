@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_Agendav2.Entidades.Exceptions
 {
-    public class ContactoNoAtiendeException : Exception
+    public class EliminarContactoException : Exception
     {
-        public ContactoNoAtiendeException() : base("El contacto no atiende.")
+        public EliminarContactoException() : base("No se pudo eliminar el contacto.")
         {
 
         }

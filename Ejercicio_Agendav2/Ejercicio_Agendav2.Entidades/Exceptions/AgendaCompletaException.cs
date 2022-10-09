@@ -8,7 +8,7 @@ namespace Ejercicio_Agendav2.Entidades.Exceptions
 {
     public class AgendaCompletaException : Exception
     {
-        public AgendaCompletaException() : base()
+        public AgendaCompletaException() : base("La agenda se encuentra completa.")
         {
 
         }

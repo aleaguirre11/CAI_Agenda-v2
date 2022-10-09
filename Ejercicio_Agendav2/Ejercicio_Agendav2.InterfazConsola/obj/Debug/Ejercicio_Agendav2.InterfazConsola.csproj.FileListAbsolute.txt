@@ -1,0 +1,11 @@
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\bin\Debug\Ejercicio_Agendav2.InterfazConsola.exe.config
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\bin\Debug\Ejercicio_Agendav2.InterfazConsola.exe
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\bin\Debug\Ejercicio_Agendav2.InterfazConsola.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\bin\Debug\Ejercicio_Agendav2.Entidades.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\bin\Debug\Ejercicio_Agendav2.Entidades.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.csproj.AssemblyReference.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.csproj.SuggestedBindingRedirects.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.csproj.CoreCompileInputs.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.csproj.CopyComplete
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.exe
+C:\Users\alexi\OneDrive\Documentos\GitHub\CAI_Agenda-v2\Ejercicio_Agendav2\Ejercicio_Agendav2.InterfazConsola\obj\Debug\Ejercicio_Agendav2.InterfazConsola.pdb
